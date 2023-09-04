@@ -73,7 +73,7 @@ let setTimer = () => {
                     document.getElementById('score').textContent = score;
                     setTimer();
                     showhitForBubble();
-                    makeBubbles();
+                    deviceWithWiseMakeBubbles();
                 });
             } else {
                 document.getElementById('card-body').innerHTML = tryAgain;
@@ -84,7 +84,7 @@ let setTimer = () => {
                     document.getElementById('score').textContent = score;
                     setTimer();
                     showhitForBubble();
-                    makeBubbles();
+                    deviceWithWiseMakeBubbles();
                 });
             }
         }
