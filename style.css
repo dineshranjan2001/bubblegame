@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Kanit:ital,wght@1,100&family=Merriweather:ital@1&family=Poppins:wght@300&family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: #70e0ae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px #578383;
+    overflow: hidden;
+}
+
+.card-header {
+    width: 100%;
+    height: 80px;
+    background-color: #3e8888;
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.box {
+    padding: 10px 17px;
+    background-color: #fff;
+    color: #136767;
+    border-radius: 5px;
+    font-weight: 600;
+
+}
+
+.header-items {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-body {
+    width: 100%;
+    background-color: #fafafa;
+    height: calc(100% - 80px);
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-content: start;
+    align-items: center;
+    justify-content: center;
+}
+
+.bubbles {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #3e8888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ebf5f5;
+    transition: background-color .3s;
+}
+
+.bubbles:hover {
+    cursor: pointer;
+    background-color: #2b6060;
+}
+
+.scoreboard-congrats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scoreboard-sad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+
+.sad {
+    display: flex;
+    justify-content: center;
+}
+
+.scoreboard-sad img {
+    width: 220px;
+    height: 220px;
+
+}
+
+.scoreboard-congrats h2 {
+    position: relative;
+    text-align: center;
+    color: #136767;
+}
+
+.scoreboard-congrats button {
+    position: relative;
+    border: none;
+    color: #fff;
+    background-color: #3e8888;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color .4s, box-shadow .3s;
+}
+
+.scoreboard-congrats button:hover {
+    cursor: pointer;
+    background-color: #2b6060;
+    box-shadow: 3px 3px 8px #578383;
+}
+
+.scoreboard-sad h2 {
+    text-align: center;
+    color: #136767;
+}
+
+.scoreboard-sad h3 {
+    color: rgb(251, 21, 21);
+}
+
+.scoreboard-sad button {
+    border: none;
+    color: #fff;
+    background-color: #3e8888;
+    padding: 12px 18px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color .4s, box-shadow .3s;
+}
+
+.scoreboard-sad button:hover {
+    cursor: pointer;
+    background-color: #2b6060;
+    box-shadow: 3px 3px 8px #578383;
+}
+
+
+
+@media screen and (min-width: 280px) {
+    .card {
+        width: 88%;
+        /* height: 89.7%; */
+        height: auto;
+    }
+
+    .card-header {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 7px;
+        padding: 12px 0;
+    }
+
+    .card-body {
+        padding: 15px 16px;
+    }
+
+    .header-items h3 {
+        font-size: 15px;
+    }
+
+    .header-items:first-child {
+        gap: 38px;
+        order: 1;
+    }
+
+    .box {
+        padding: 8px 15px;
+        font-size: 12px;
+    } 
+
+    .scoreboard-congrats img {
+        width: 190px;   
+    }
+
+    .scoreboard-congrats h2 {
+        top: -4rem;
+        font-size: 18px;
+    }
+
+    .scoreboard-congrats button {
+        top: -2rem;
+        padding: 10px 17px;
+        font-size: 15px;
+        margin: 0 20px;
+        font-weight: 600;
+    }
+
+    .scoreboard-sad img {
+        width: 130px;
+        height: 130px;
+    }
+    .scoreboard-sad h2{
+        font-size: 18px;
+    }
+    .scoreboard-sad h3 {
+        font-size: 17px;
+    }
+    .scoreboard-sad button{
+        margin: 15px 20px;
+        font-size: 15px;
+    }
+}
+
+
+
+@media screen and (min-width: 375px) {
+
+    .card-body {
+        padding: 15px 16px;
+    }
+
+    .scoreboard-congrats img {
+        width: 250px;   
+    }
+    .scoreboard-congrats h2 {
+        top: -5rem;
+        font-size: 20px;
+    }
+    .scoreboard-congrats button {
+        top: -3rem;
+        padding: 12px 17px;
+        font-size: 16px;
+        margin: 0 90px;
+        font-weight: 600;
+    }
+    
+    .scoreboard-sad img {
+        width: 140px;
+        height: 140px;
+    }
+    .scoreboard-sad h2{
+        font-size: 20px;
+    }
+    .scoreboard-sad h3 {
+        font-size: 19px;
+    }
+    .scoreboard-sad button{
+        margin: 15px 20px;
+        font-size: 15px;
+        margin: 0 90px;
+    }
+}
+
+@media screen and (min-width : 576px) {
+
+    .card {
+        /* height: 87.7%; */
+        height: auto;
+    }
+
+    .card-header {
+        padding: 14px 0;
+    }
+    .scoreboard-congrats img {
+        width: 270px;   
+    }
+    .scoreboard-congrats h2 {
+        top: -6rem;
+        font-size: 18px;
+    }
+    .scoreboard-congrats button {
+        top: -3rem;
+        padding: 14px 20px;
+        font-size: 14px;
+        margin: 0 90px;
+        font-weight: 600;
+    }
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .card-header {
+        height: auto;
+        flex-direction: row;
+        padding: 20px 0;
+    }
+    .header-items h3 {
+        font-size: 18px;
+    }
+    .card-body {
+        padding: 20px 20px;
+    }
+
+    .header-items:first-child {
+        gap: 15px;
+        order: 0;
+    }
+    .scoreboard-congrats img {
+        width: 300px;   
+    }
+    .scoreboard-congrats h2 {
+        top: -6rem;
+        font-size: 20px;
+    }
+    .box {
+        padding: 10px 17px;        
+        font-size: 17px;
+    }
+    .scoreboard-congrats button {
+        top: -4rem;
+        padding: 14px 20px;
+        font-size: 16px;
+        margin: 0 90px;
+        font-weight: 600;
+    }
+    .scoreboard-sad img {
+        width: 180px;
+        height: 180px;
+    }
+    .scoreboard-sad h2{
+        font-size: 20px;
+    }
+    .scoreboard-sad h3 {
+        font-size: 20px;
+    }
+    .scoreboard-sad button{
+        margin: 15px 20px;
+        font-size: 17px;
+    }
+}
+
+
+
+@media screen and (min-width: 1150px) {
+    .card-header {
+        padding: 19px 0px;
+    }
+    .card {
+        width: 75%;
+        height: fit-content;
+    }
+    .card-body{
+        padding: 20px 20px;
+    }
+    .header-items h3 {
+        font-size: 20px;
+    }
+   
+    .scoreboard-congrats img {
+        width: 310px;
+    }
+
+    .scoreboard-congrats h2 {
+        top: -6rem;
+        font-size: 24px;
+    }
+    
+}
